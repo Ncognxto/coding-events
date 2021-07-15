@@ -8,16 +8,13 @@
 <table class="table table-striped">
   <thead>
   <tr>
-    <th>ID</th>
-    <th>Name</th>
-    <th>Description</th>
-    <th>Contact Email</th>
-    <th>Category</th>
+    <th>Tag Name</th>
   </tr>
   </thead>
-  <tr th:each="event : ${events}">
-    <td><a th:href="'/events/detail?eventId=' + ${event.id}" th:text="${event.name}"></a></td>
+  <tr th:each="tag : ${tags}">
+    <td th:text="${tag.displayName}"></td>
   </tr>
+
 </table>
 
 </body>

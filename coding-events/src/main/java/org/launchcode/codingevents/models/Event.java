@@ -29,11 +29,11 @@ public class Event extends AbstractEntity {
     private EventCategory eventCategory;
 
     public Event(String name, EventCategory eventCategory) {
-        this.name = name;;
+        this.name = name;
         this.eventCategory = eventCategory;
     }
 
-    public Event() { }
+    public Event() {}
 
     public String getName() {
         return name;
@@ -63,6 +63,5 @@ public class Event extends AbstractEntity {
     public String toString() {
         return name;
     }
-
 
 }
